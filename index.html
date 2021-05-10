@@ -13,18 +13,14 @@
     
     <!-- css link -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <!-- java script link -->
-    <script type="text/javascript" src="js/main.js"></script>
-
     <title>myportfolio</title>
   </head>
   <body onload="myfunction()">
    <div id="loading"></div>
    <!-- navbar -->
-   <div class="nav-bar bg-light shadow-sm fixed-top ">
+   <div class="nav-bar bg-light shadow-sm " id="mynavbar">
      <div class="container">
-       <nav class="navbar navbar-expand-lg navbar-light " onclick="function()">
+       <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="#">arshad</a><span class="span"></span>
         <button class="navbar-toggler " type="button" data-toggle="collapse"  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,7 +31,7 @@
             <li class="nav-item active">
               <a class="nav-link" href="#">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" >
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
@@ -73,7 +69,7 @@
      </div>
    </section>
 
-   <!-- about section -->
+   <!-- -------------------- about section start --------------------------- -->
 
    <section class="jumbotron" id="about">
      <div class="container">
@@ -95,7 +91,8 @@
      </div>
    </section>
 
-   <!-- --------------- skil section ----------------- -->
+   <!-- --------------- about section end ----------------- -->
+   <!-- --------------- skil section start ----------------- -->
 
 <section id="skill">
   <div class="container">
@@ -110,7 +107,7 @@
       </div>
       <div class="skill-data">
 
-        <div class="skill-area shadow">
+        <div class="skill-area ">
             <div class="skill-area-inner">
 
                 <div class="skill-icon">
@@ -122,7 +119,7 @@
                 </div>
 
                 <div class="skill-per ">
-                  <span >70%</span>
+                  <span >80%</span>
                 </div>
 
             </div>
@@ -132,7 +129,7 @@
 
         <!-- ----------------------------- -->
           
-          <div class="skill-area shadow">
+          <div class="skill-area ">
             <div class="skill-area-inner">
 
                 <div class="skill-icon">
@@ -144,7 +141,7 @@
                 </div>
 
                 <div class="skill-per ">
-                  <span >60%</span>
+                  <span >70%</span>
                 </div>
 
             </div>
@@ -154,7 +151,7 @@
           
           <!-- --------------------------------------- -->
 
-          <div class="skill-area shadow">
+          <div class="skill-area ">
             <div class="skill-area-inner">
 
                 <div class="skill-icon">
@@ -166,7 +163,7 @@
                 </div>
 
                 <div class="skill-per ">
-                  <span >50%</span>
+                  <span >60%</span>
                 </div>
 
             </div>
@@ -176,7 +173,29 @@
           
           <!-- --------------------------------- -->
 
-          <div class="skill-area shadow">
+          <div class="skill-area ">
+            <div class="skill-area-inner">
+
+                <div class="skill-icon">
+                  <i class="fab fa-react"></i>
+                </div>
+
+                <div class="skill-name">
+                  <span>Reactjs</span>
+                </div>
+
+                <div class="skill-per ">
+                  <span >50%</span>
+                </div>
+
+            </div>
+            <div class="skill-bar reactjs-bar "></div>
+
+        </div>
+
+          <!-- --------------------------------- -->
+          
+          <div class="skill-area ">
             <div class="skill-area-inner">
 
                 <div class="skill-icon">
@@ -188,7 +207,7 @@
                 </div>
 
                 <div class="skill-per ">
-                  <span >20%</span>
+                  <span >40%</span>
                 </div>
 
             </div>
@@ -196,6 +215,8 @@
 
         </div>
         
+        
+
       </div>
    
     </div>
@@ -207,7 +228,8 @@
   </div>
 </section>
 
-<!-- ---------------- work section ----------------------- -->
+<!-- ---------------- skill section end----------------------- -->
+<!-- ---------------- work section start----------------------- -->
 
 <section id="work">
   <div class="container">
@@ -225,7 +247,8 @@
   </div>
 </section>
 
-<!-- ------------- contact section --------------- -->
+<!-- ------------- work section end--------------- -->
+<!-- ------------- contact section start--------------- -->
 
 <section id="contact">
   <div class="container">
@@ -262,7 +285,8 @@
   </div>
 </section>
 
-<!-- ------------------- footer section ------------------ -->
+<!-- ------------------- contact section end------------------ -->
+<!-- ------------------- footer section start------------------ -->
 <footer>
   <div class=" footer-bg">
     <div class="container footer-sec">
@@ -291,6 +315,7 @@
   </div>
 </footer>
 
+<!-- ------------------- footer section end------------------ -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -298,13 +323,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script>
-        var preloader = document.getElementById('loading');
-        function myfunction(){
-          preloader.style.display = 'none';
-        }
-         $('.navbar-collapse a').click(function(){
-            $(".navbar-collapse").collapse('hide');
-        });
+        
     </script>
+    <!-- java script link -->
+    <script type="text/javascript" src="js/main.js"></script>
+
   </body>
 </html>
