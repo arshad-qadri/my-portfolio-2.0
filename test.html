@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            /*position: relative;*/
+            margin-top: 100px;
+            width: 450px;
+            height: auto;
+            background: grey;
+            border-radius: 5px;
+             border: 2px solid purple;
+        }
+        
+        .label {
+            padding: 20px 130px;
+            font-size: 35px;
+            font-weight: bold;
+            color: purple;
+            justify-content: center;
+        }
+        
+        .login_form {
+            padding: 20px 40px;
+           
+        }
+        
+        .login_form .font {
+            font-size: 19px;
+            color: black;
+            margin: 5px 0;
+        }
+        
+        .login_form input {
+            height: 40px;
+            width: 200px;
+            padding: 0.5px;
+            font-size: 18px;
+            outline: none;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+        
+        .login_form .font2 {
+            margin-top: 30px;
+        }
+        
+        .login_form button {
+            margin: 45px 0 30px 0;
+            height: 45px;
+            width: 165px;
+            font-size: 20px;
+            color: black;
+            outline: none;
+            cursor: pointer;
+            font-weight: bold;
+            background: white;
+            border-radius: 3px;
+            border: 1px solid black;
+            float: right;
+
+        }
+        label{
+        	line-height: 40px;
+        	display: inline;
+        }
+        .font{
+        	display: grid;
+        	grid-template-columns: repeat(2,1fr);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <form class="login_form" method="post">
+
+            <div class="font"> 
+            	<label>Email or Phone</label> 
+                <input type="text" name="email">
+            </div>
+
+            <div class="font font2"> 
+            	<label>Password</label> 
+            	<input type="password" name="password">
+        	</div>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
